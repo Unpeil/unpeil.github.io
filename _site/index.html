@@ -53,9 +53,8 @@
       border: 1px solid black;
     }
     th, td {
-      padding: 3px 3px 3px 3px;
+      padding: 1px 1px 0px 1px;
       text-align: center;
-      height: 140;
     }
     video {
       height: 480px;
@@ -67,6 +66,16 @@
       gap: 10px;
       margin-top: 20px;
       align-items: center;
+    }
+    .key-frame-image {
+      flex: auto;
+      width: 100px;
+      height: auto;
+    }
+    .gaeul-image {
+      flex: auto;
+      width: 200px;
+      height: auto;
     }
   </style>
 </head>
@@ -169,25 +178,25 @@
         <!-- Table Body: 10 rows with 3 columns each -->
         <tr>
           <th style="vertical-align: middle;">Original extraction</th>
-          <td><img src="static/images/gaeul_1/original_1.jpg" alt="Original Image 1"></td>
-          <td><img src="static/images/gaeul_1/original_2.jpg" alt="Original Image 2"></td>
-          <td><img src="static/images/gaeul_1/original_3.jpg" alt="Original Image 3"></td>
-          <td><img src="static/images/gaeul_1/original_4.jpg" alt="Original Image 4"></td>
-          <td><img src="static/images/gaeul_1/original_5.jpg" alt="Original Image 5"></td>
-          <td><img src="static/images/gaeul_1/original_6.jpg" alt="Original Image 6"></td>
-          <td><img src="static/images/gaeul_1/original_7.jpg" alt="Original Image 7"></td>
-          <td><img src="static/images/gaeul_1/original_8.jpg" alt="Original Image 8"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_1.jpg" alt="Original Image 1"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_2.jpg" alt="Original Image 2"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_3.jpg" alt="Original Image 3"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_4.jpg" alt="Original Image 4"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_5.jpg" alt="Original Image 5"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_6.jpg" alt="Original Image 6"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_7.jpg" alt="Original Image 7"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/original_8.jpg" alt="Original Image 8"></td>
         </tr>
         <tr>
           <th style="vertical-align: middle;">Ours</th>
-          <td><img src="static/images/gaeul_1/ours_1.jpg" alt="Ours Image 1"></td>
-          <td><img src="static/images/gaeul_1/ours_2.jpg" alt="Ours Image 2"></td>
-          <td><img src="static/images/gaeul_1/ours_3.jpg" alt="Ours Image 3"></td>
-          <td><img src="static/images/gaeul_1/ours_4.jpg" alt="Ours Image 4"></td>
-          <td><img src="static/images/gaeul_1/ours_5.jpg" alt="Ours Image 5"></td>
-          <td><img src="static/images/gaeul_1/ours_6.jpg" alt="Ours Image 6"></td>
-          <td><img src="static/images/gaeul_1/ours_7.jpg" alt="Ours Image 7"></td>
-          <td><img src="static/images/gaeul_1/ours_8.jpg" alt="Ours Image 8"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_1.jpg" alt="Ours Image 1"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_2.jpg" alt="Ours Image 2"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_3.jpg" alt="Ours Image 3"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_4.jpg" alt="Ours Image 4"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_5.jpg" alt="Ours Image 5"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_6.jpg" alt="Ours Image 6"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_7.jpg" alt="Ours Image 7"></td>
+            <td><img class="key-frame-image" src="static/images/gaeul_1/ours_8.jpg" alt="Ours Image 8"></td>
         </tr>
       </table>
       <h2 class="subtitle has-text-centered">
@@ -412,21 +421,21 @@
           <!-- Good Images Row -->
           <tr>
             <th style="vertical-align: middle;">General<br>model</th>
-            <td><img src="static/images/gaeul_sd/gaeul_bad_1.png" alt="Good Image 1"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_bad_2.png" alt="Good Image 2"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_bad_3.png" alt="Good Image 3"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_bad_4.png" alt="Good Image 4"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_bad_5.png" alt="Good Image 5"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_bad_1.png" alt="Good Image 1"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_bad_2.png" alt="Good Image 2"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_bad_3.png" alt="Good Image 3"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_bad_4.png" alt="Good Image 4"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_bad_5.png" alt="Good Image 5"></td>
           </tr>
           
           <!-- Bad Images Row -->
           <tr>
             <th style="vertical-align: middle;">Ours<br>(Unpeil)</th>
-            <td><img src="static/images/gaeul_sd/gaeul_good_1.png" alt="Good Image 1"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_good_2.png" alt="Good Image 2"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_good_3.png" alt="Good Image 3"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_good_4.png" alt="Good Image 4"></td>
-            <td><img src="static/images/gaeul_sd/gaeul_good_5.png" alt="Good Image 5"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_good_1.png" alt="Good Image 1"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_good_2.png" alt="Good Image 2"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_good_3.png" alt="Good Image 3"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_good_4.png" alt="Good Image 4"></td>
+            <td><img class="gaeul-image" src="static/images/gaeul_sd/gaeul_good_5.png" alt="Good Image 5"></td>
           </tr>
         </table>
       </div>
