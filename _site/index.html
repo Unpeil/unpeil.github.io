@@ -43,6 +43,32 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    table {
+      width: auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 3px 3px 3px 3px;
+      text-align: center;
+      height: 140;
+    }
+    video {
+      height: 480px;
+      object-fit: cover;
+    }
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -65,7 +91,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Unpeil<br>CES 2025</span>
+                    <span class="author-block">Unpeil, GAIL Lab - ChungAng University</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -124,19 +150,48 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<section class="hero">
   <div class="container is-max-desktop">
-    <div class="hero-body is-centered has-text-centered">
-      <video poster="" id="gaeul_1_segment" autoplay controls muted loop width="49%">
-        <!-- Your video here -->
-        <source src="static/videos/gaeul_1_segment.mp4" type="video/mp4">
-      </video>
-      <video poster="" id="gaeul_2_segment" autoplay controls muted loop width="49%">
-        <!-- Your video here -->
-        <source src="static/videos/gaeul_2_segment.mp4" type="video/mp4">
-      </video>
+    <div class="hero-body has-text-centered">
+      <table>
+        <!-- Table Header -->
+        <tr>
+          <th></th>
+          <th>Key Frame 1</th>
+          <th>Key Frame 2</th>
+          <th>Key Frame 3</th>
+          <th>Key Frame 4</th>
+          <th>Key Frame 5</th>
+          <th>Key Frame 6</th>
+          <th>Key Frame 7</th>
+          <th>Key Frame 8</th>
+        </tr>
+        <!-- Table Body: 10 rows with 3 columns each -->
+        <tr>
+          <th style="vertical-align: middle;">Original extraction</th>
+          <td><img src="static/images/gaeul_1/original_1.jpg" alt="Original Image 1"></td>
+          <td><img src="static/images/gaeul_1/original_2.jpg" alt="Original Image 2"></td>
+          <td><img src="static/images/gaeul_1/original_3.jpg" alt="Original Image 3"></td>
+          <td><img src="static/images/gaeul_1/original_4.jpg" alt="Original Image 4"></td>
+          <td><img src="static/images/gaeul_1/original_5.jpg" alt="Original Image 5"></td>
+          <td><img src="static/images/gaeul_1/original_6.jpg" alt="Original Image 6"></td>
+          <td><img src="static/images/gaeul_1/original_7.jpg" alt="Original Image 7"></td>
+          <td><img src="static/images/gaeul_1/original_8.jpg" alt="Original Image 8"></td>
+        </tr>
+        <tr>
+          <th style="vertical-align: middle;">Ours</th>
+          <td><img src="static/images/gaeul_1/ours_1.jpg" alt="Ours Image 1"></td>
+          <td><img src="static/images/gaeul_1/ours_2.jpg" alt="Ours Image 2"></td>
+          <td><img src="static/images/gaeul_1/ours_3.jpg" alt="Ours Image 3"></td>
+          <td><img src="static/images/gaeul_1/ours_4.jpg" alt="Ours Image 4"></td>
+          <td><img src="static/images/gaeul_1/ours_5.jpg" alt="Ours Image 5"></td>
+          <td><img src="static/images/gaeul_1/ours_6.jpg" alt="Ours Image 6"></td>
+          <td><img src="static/images/gaeul_1/ours_7.jpg" alt="Ours Image 7"></td>
+          <td><img src="static/images/gaeul_1/ours_8.jpg" alt="Ours Image 8"></td>
+        </tr>
+      </table>
       <h2 class="subtitle has-text-centered">
-        Segmentation of object - 여기에 제일 잘 나온 데모 영상
+        Key frame extraction comparison
       </h2>
     </div>
   </div>
@@ -178,14 +233,14 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
         <!-- Your image here -->
-        <img src="static/images/architecture1.png" alt="Pawframe Architecture"/>
+        <img src="static/images/architecture/architecture1.png" alt="Pawframe Architecture"/>
         <h2 class="subtitle has-text-centered">
           Overall architecture of Pawframe.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/architecture2.png" alt="Pawframe Architecture"/>
+        <img src="static/images/architecture/architecture2.png" alt="Pawframe Architecture"/>
         <h2 class="subtitle has-text-centered">
           Overall architecture of Pawframe.
         </h2>
@@ -205,14 +260,14 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
         <!-- Your image here -->
-        <img src="static/images/architecture3.png" alt="Pawframe Architecture"/>
+        <img src="static/images/architecture/architecture3.png" alt="Pawframe Architecture"/>
         <h2 class="subtitle has-text-centered">
           Process of key frame extraction.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/architecture4.png" alt="Pawframe Architecture"/>
+        <img src="static/images/architecture/architecture4.png" alt="Pawframe Architecture"/>
         <h2 class="subtitle has-text-centered">
           Process of key frame extraction.
         </h2>
@@ -223,8 +278,33 @@
 </section>
 <!-- End image carousel -->
 
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <h2 class="title is-3 has-text-centered">Demo</h2>
+    <div class="video-container">
+      <video poster="" id="video1" autoplay controls muted loop height="30%">
+        <!-- Your video file here -->
+        <source src="static/videos/gaeul_1.mp4"
+        type="video/mp4">
+      </video>
+      <video poster="" id="video2" autoplay controls muted loop height="30%">
+        <!-- Your video file here -->
+        <source src="static/videos/gaeul_1_segment.mp4"
+        type="video/mp4">
+      </video>
+      <video poster="" id="video3" autoplay controls muted loop height="30%">
+        <!-- Your video file here -->
+        <source src="static/videos/gaeul_1_pose.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
 <!-- Paper abstract -->
-<section class="section hero">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -271,7 +351,7 @@
 <!-- End paper abstract -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -299,7 +379,7 @@
 <!-- End paper abstract -->
 
 <!-- Paper abstract -->
-<section class="section hero">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -316,6 +396,47 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+<!-- Teaser video-->
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <div class="table-container">
+        <table>
+          <!-- Merged Header Row -->
+          <tr>
+            <th colspan="6">Animal Image Fine-tuning</th>
+          </tr>
+          
+          <!-- Good Images Row -->
+          <tr>
+            <th style="vertical-align: middle;">General<br>model</th>
+            <td><img src="static/images/gaeul_sd/gaeul_bad_1.png" alt="Good Image 1"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_bad_2.png" alt="Good Image 2"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_bad_3.png" alt="Good Image 3"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_bad_4.png" alt="Good Image 4"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_bad_5.png" alt="Good Image 5"></td>
+          </tr>
+          
+          <!-- Bad Images Row -->
+          <tr>
+            <th style="vertical-align: middle;">Ours<br>(Unpeil)</th>
+            <td><img src="static/images/gaeul_sd/gaeul_good_1.png" alt="Good Image 1"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_good_2.png" alt="Good Image 2"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_good_3.png" alt="Good Image 3"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_good_4.png" alt="Good Image 4"></td>
+            <td><img src="static/images/gaeul_sd/gaeul_good_5.png" alt="Good Image 5"></td>
+          </tr>
+        </table>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        Animal image fine-tuning comparison
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video --
 
 
 <!-- Youtube video -->
@@ -337,41 +458,6 @@
   </div>
 </section> -->
 <!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
 
 
 
